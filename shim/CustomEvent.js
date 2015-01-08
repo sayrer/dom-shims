@@ -1,8 +1,8 @@
 (function (window) {
   'use strict';
-  //
-  // Detect full support
-  //
+  /**		 
+   * Detect full support
+   */
 
   var isSupported = (
     'CustomEvent' in window &&
@@ -13,11 +13,10 @@
 
   if (isSupported) { return; }
 
-  //
-  // Apply Shim
-  //
+  /**		 
+   * Apply Shim
+   */
 
-  //
   /**
    * http://www.w3.org/TR/dom/#customevent
    * @param {string} type
