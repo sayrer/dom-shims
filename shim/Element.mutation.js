@@ -72,10 +72,13 @@
     }
   };
 
-  ElementPrototype.remove = function remove() {
+  /**
+   * @param {number=} index
+   */
+  ElementPrototype['remove'] = function remove(index) {
     var parentNode = this.parentNode;
     if (parentNode) {
       parentNode.removeChild(this);
     }
   };
-}(this));
+}());
