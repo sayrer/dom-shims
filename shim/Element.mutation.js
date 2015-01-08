@@ -73,9 +73,10 @@
   };
 
   /**
-   * @param {number=} index
+   * This method is defined with bracket notation to avoid
+   * conflicting with the definition of HTMLSelectElement.
    */
-  ElementPrototype['remove'] = function remove(index) {
+  ElementPrototype['remove'] = function remove() {
     var parentNode = this.parentNode;
     if (parentNode) {
       parentNode.removeChild(this);
